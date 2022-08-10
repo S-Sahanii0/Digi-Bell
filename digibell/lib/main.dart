@@ -1,21 +1,19 @@
-import 'package:digibell/features/home/home_page.dart';
+import 'dart:async';
+import 'dart:developer';
+
+import 'package:digibell/app/app.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 void main() {
-  runApp(const MyApp());
-}
+  runZonedGuarded(
+    () => runApp(const App()),
+    (error, stackTrace) {
+      log(error.toString());
+      log(stackTrace.toString());
+    },
+  );
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return ScreenUtilInit(builder: (context, _) {
-      return const MaterialApp(
-        home: HomePage(),
-      );
-    });
-  }
+  FlutterError.onError = (details) {
+    log(details.exceptionAsString(), stackTrace: details.stack);
+  };
 }
