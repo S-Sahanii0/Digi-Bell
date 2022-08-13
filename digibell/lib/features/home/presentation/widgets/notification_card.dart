@@ -1,6 +1,6 @@
 import 'package:digibell/app/colors.dart';
 import 'package:digibell/app/styles.dart';
-import 'package:digibell/features/home/widgets/accept_button.dart';
+import 'package:digibell/features/home/presentation/widgets/accept_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

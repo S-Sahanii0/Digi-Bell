@@ -1,4 +1,4 @@
-import 'package:digibell/features/home/home_page.dart';
+import 'package:digibell/features/auth/presentation/view/login_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -10,7 +10,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScreenUtilInit(builder: (context, _) {
       return const MaterialApp(
-        home: HomePage(),
+        home: LoginPage(),
       );
     });
   }

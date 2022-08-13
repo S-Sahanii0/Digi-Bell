@@ -1,6 +1,6 @@
 import 'package:digibell/app/colors.dart';
-import 'package:digibell/features/home/widgets/digibell_header.dart';
-import 'package:digibell/features/home/widgets/notification_card.dart';
+import 'package:digibell/features/home/presentation/widgets/digibell_header.dart';
+import 'package:digibell/features/home/presentation/widgets/notification_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
