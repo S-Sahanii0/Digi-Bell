@@ -9,7 +9,7 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(builder: (context, _) {
-      return const MaterialApp(
+      return MaterialApp(
         home: LoginPage(),
       );
     });

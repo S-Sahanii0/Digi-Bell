@@ -10,7 +10,7 @@ class DigiBellTextField extends StatelessWidget {
   final String label;
   final String fieldHint;
   final IconData suffix;
-  final FormFieldValidator validator;
+  final FormFieldValidator<String> validator;
 
   const DigiBellTextField(
       {Key? key,
@@ -25,6 +25,7 @@ class DigiBellTextField extends StatelessWidget {
   Widget build(BuildContext context) {
     return FormBuilderTextField(
       name: name,
+      validator: validator,
       decoration: getFormInputDecoration(
         hint: fieldHint,
         suffix: suffix,
