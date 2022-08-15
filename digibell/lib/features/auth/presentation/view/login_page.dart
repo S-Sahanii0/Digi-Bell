@@ -26,7 +26,7 @@ class LoginPage extends StatelessWidget {
               DigiBellTextField(
                   name: 'restaurant',
                   label: 'Restaurant Name',
-                  fieldHint: 'Restaurant',
+                  fieldHint: 'Enter restaurant name.',
                   suffix: Icons.local_restaurant,
                   validator: (val) => val == null || val.isEmpty
                       ? 'Please enter restaurant name'
@@ -37,7 +37,7 @@ class LoginPage extends StatelessWidget {
               DigiBellTextField(
                   name: 'password',
                   label: 'Restaurant Password',
-                  fieldHint: 'Password',
+                  fieldHint: 'Enter the password.',
                   suffix: Icons.password,
                   validator: (val) => val == null || val.isEmpty
                       ? 'Please enter a value'
